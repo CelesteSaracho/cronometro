@@ -1,0 +1,98 @@
+/* Fondo con degradado de colores pastel */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7, #fad0c4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* Título */
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Pantalla del cronómetro */
+.time-display {
+  font-size: 36px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Botón iniciar/detener */
+.start-stop-button {
+  background: #a8e6cf;
+  color: #fff;
+}
+
+.start-stop-button.active {
+  background: #ff8b94;
+}
+
+/* Botón de parcial */
+.partial-button {
+  background: #ffd3b6;
+  color: #fff;
+}
+
+/* Botón de restablecer */
+.reset-button {
+  background: #ffaaa5;
+  color: #fff;
+}
+
+/* Botones al pasar el mouse */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Lista de tiempos guardados */
+.lap-times {
+  margin-top: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.lap-times h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.lap-times ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lap-times li {
+  font-size: 14px;
+  background: #fdf5e6;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
